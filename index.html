@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5 bg-info-subtle p-5 rounded-5 border-left-5 border-info-subtle">
+
+        <h1 class="fw-bold font-monospace">Formulario</h1>
+
+        <div class="m-3">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="id" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="id">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputTitulo" class="form-label">Título</label>
+                    <input type="text" class="form-control" >
+                </div>
+
+                <div class="col-6">
+                    <label for="inputTextArea" class="form-label">Descripción</label>
+                    <textarea class="form-control"  rows="3"></textarea>
+
+                </div>
+
+                <div class="col-6">
+                    <label for="inputTiempo" class="form-label">Tiempo</label>
+                    <input type="date" class="form-control">
+                </div>
+
+                <div class="col-6">
+                    <label for="inputImagen" class="form-label">Imagen</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputResponsable" class="form-label">Responsable</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputEstado" class="form-label">Estado</label>
+                    <p class="fw-light ">(Elija una opción)</p>
+
+                    <select id="estado" class="form-select">
+                        <option selected></option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En proceso">En proceso</option>
+                        <option value="En testing">En testing</option>
+                        <option value="Completada">Completada</option>
+                    </select>
+                </div>
+
+                <p>Estado seleccionado: <span class="fw-semibold" id="estadoSeleccionado"> </span></p>
+
+                <div class="col-6">
+                    <button type="submit" value="enviar" class="btn btn-primary float-end rounded-pill py-3 px-4">Enviar</button>
+                </div>
+
+        </div>
+
+
+
+        </form>
+
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
